@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Music Player</title>
+  </head>
+
+  <body>
+    <div class="bg">
+      <div class="player">
+        <div class="container">
+          <p class="count" id="count">Трек X из Y</p>
+
+          <div class="img-container">
+            <img src="assets/img/indiebox-1.jpg" id="cover" alt="" />
+          </div>
+
+          <h4 class="title" id="title">A Fine Day</h4>
+          <p class="author" id="author">IndieBox</p>
+
+          <audio
+            src="assets/music/afineday.mp3"
+            id="audio"
+            preload="metadata"
+          ></audio>
+
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+          <div class="seconds">
+            <p class="seconds-current" id="time-current">00:00</p>
+            <p class="seconds-all" id="time-all">00:00</p>
+          </div>
+
+          <div class="grid">
+            <div class="volume-wrap">
+              <button class="action-btn" id="volume-btn">
+                <i class="v ri-volume-up-fill volume-icon"></i>
+              </button>
+              <div class="volume-container">
+                <div class="volume"></div>
+              </div>
+            </div>
+
+            <div class="navigation">
+              <button id="prev" class="action-btn">
+                <i class="ri-skip-back-fill"></i>
+              </button>
+
+              <button id="play" class="action-btn accent">
+                <i class="p ri-play-circle-fill"></i>
+              </button>
+
+              <button id="next" class="action-btn">
+                <i class="ri-skip-forward-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
